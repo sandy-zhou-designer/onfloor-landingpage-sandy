@@ -155,8 +155,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <div class="form-group"> 
                                 <label class="check-box-label">
-                                    <input type="checkbox" name="contractor-designer" id="custentity_is_pro_fs_lbl" class="input-field check-box-field" value="yes" style="-webkit-appearance: checkbox;"> I am a contractor/designer.
+                                    <input type="checkbox" name="custentity_is_pro" id="custentity_is_pro_fs" class="input-field check-box-field" value="T" style="-webkit-appearance: checkbox;"> I am a contractor/designer.
                                 </label>
+                            </div>
+                            <div class="form-group source-url"> 
+                                <tr>
+                                    <td style="padding-top:3px" class="smalltextnolink" valign="top" nowrap="nowrap" align="right"><span class="labelSpanEdit smalltextnolink" style="white-space: wrap;" id="custentity_source_url_fs_lbl"><a class="smalltextnolink" onmouseover="this.className='smalltextnolink'; return true;" onmouseout="this.className='smalltextnolink'; ">Source URL</a>&nbsp;</span></td>
+                                    <td nowrap="nowrap"><span id="custentity_source_url_fs" data-fieldtype="" class="effectStatic" style="white-space: nowrap"><textarea name="custentity_source_url" id="custentity_source_url" rows="4" class="input textarea" aria-labelledby="custentity_source_url_fs_lbl" cols="-1" onfocus="this.isvalid=false;" onblur="this.isvalid=validate_textfield_maxlen(this,1000000,false,true);return this.isvalid;" onchange="setWindowChanged(window, true);if (!this.isvalid) this.isvalid=validate_textfield_maxlen(this,1000000,true,true);if (this.isvalid == false) { selectAndFocusField(this); }if (this.isvalid) {};return this.isvalid;" onkeypress="event.cancelBubble = true; return true;" wrap="VIRTUAL"></textarea></span></td>
+                                </tr>
                             </div>                             
                             <div class="form-group"> 
                                 <input type="hidden" class="form-control" placeholder="Subsidiary" required="required" name="subsidiary" id="subsidiary_fs" value="5"> 
@@ -164,7 +170,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="form-group text-center"> 
                                 <button type="submit" class="btn btn-custom btn-sm btn-block">Start Now</button>                                 
                             </div>                             
-                            <span class="help-block m-b-0 m-t-20 text-muted"></span> 
+                            <span class="help-block m-b-0 m-t-20 text-muted"></span>
                         </form>                         
                         <img class="d-none d-lg-block d-xl-block" style="position:absolute;left:-120px;width:200px;padding-top:20px" src="images/arrow.jpg" data-aos="fade-up"> 
                     </div>                     
@@ -896,14 +902,7 @@ Italian Grey / 5mm / Vinyl</p>
         <!-- carousel -->         
         <script src="js/owl.carousel.min.js"></script>         
         <!--common script for all pages-->         
-        <script src="js/jquery.app.js?v=05"></script>         
-        <script>    var url = document.createElement("TEXTAREA");
-    url.setAttribute("hidden", "hidden");
-    url.setAttribute("name", "url");
-   
-    url.setAttribute("id", "custentity_source_url_fs");
-    url.setAttribute("value", window.location.href);
-    document.getElementById("book").appendChild(url);</script>         
+        <script src="js/jquery.app.js?v=06"></script>         
         <!-- Vue js -->
     </body>     
 </html>
