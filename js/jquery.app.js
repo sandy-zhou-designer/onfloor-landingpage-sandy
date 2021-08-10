@@ -164,8 +164,13 @@ $( "ul" ).on( "click", "li", function() {
     }
 
     init();
-    console.log("hi");
+   
     jQuery(document).ready(function($) {
+
+      //add source url //
+       jQuery(".source-url").hide();
+      jQuery("#custentity_source_url").attr('value', window.location.href);
+
 
   var width = $(window).width();
         if (width <= 960) {
@@ -204,7 +209,3 @@ $( "ul" ).on( "click", "li", function() {
 
 
 })(jQuery);
-
-
-
-
